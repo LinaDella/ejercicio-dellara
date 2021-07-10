@@ -1,0 +1,114 @@
+* { /* selector universal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* TYPOGRAPHY: font-family: 'Montserrat', sans-serif; */
+/* LIGHT PINK: color: #FFE8FC */
+/* PINK: #FF8CF0 */
+/* GREEN: #009341 */
+/* GzEY: #555555 */
+/* WHITE: #ffffff */
+
+/* ENTREGABLE FLEXBOX */
+/* header starts */
+
+.header {
+    display: grid;
+    padding: 10px;
+    background: #FFE8FC;
+    display: grid;
+    grid-template-areas:
+        "header"
+       ;
+    /* propiedades grid */
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+    column-gap: 5px;
+}
+.container {
+    grid-area: header;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    grid-template-areas:
+        "logo menu menu-2"
+       ;   
+}
+.menu-logo {
+    grid-area: logo; /* no me toma el grid-area*/
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    align-content: flex-start;
+    align-items: center;
+}
+
+.logo img {
+    width: auto;
+    height: auto;
+}
+
+/* header-menu*/
+.menu {
+    grid-area: menu;
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+    align-content: space-around;
+    align-items: center;
+   
+}
+/* .menu ul {
+    
+}*/
+.menu ul li {
+    margin: 0 15px;
+    list-style: square;
+    color: #FF8CF0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size:12px;
+}
+.menu ul li a:hover {
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* header-menu-2*/
+
+.menu-2 {
+    display: flex;
+    padding-top: 15px;
+    padding-top: 15px;
+    
+}
+.menu-2 ul {
+    display: flex;
+}
+.menu-2 ul li {
+    margin: 0 15px;
+    color: #FF8CF0;
+}
+
+.menu-2 ul li a {
+    text-decoration: none;
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight:normal;
+    font-size: 12px;
+}
+.menu-2 ul li a:hover {
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight:bold;
+    font-size: 12px;
+}
+/* header ends */

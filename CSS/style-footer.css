@@ -1,0 +1,133 @@
+* { /* selector universal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* TYPOGRAPHY: font-family: 'Montserrat', sans-serif; */
+/* LIGHT PINK: color: #FFE8FC */
+/* PINK: #FF8CF0 */
+/* GREEN: #009341 */
+/* GzEY: #555555 */
+/* WHITE: #ffffff */
+
+/* footer starts */
+
+.footer {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "footer"
+       ;
+    /* propiedades grid */
+    
+    padding: 10px;
+    background: #FFE8FC;
+}
+    
+footer nav {
+    grid-area: footer;
+    grid-column: 1 / 6;
+    grid-row: 1 / 2;
+    padding: 10px;
+}
+
+/* ENTREGABLE GRID */
+
+.footer-container {
+    display: grid;
+    grid-template: 
+    "menu follow-us location"
+    ". . .";
+    grid-template-rows: 3fr;
+    grid-template-columns: 30%;
+    column-gap: 10px;
+    justify-items: stretch;
+    align-items: start;
+}
+
+.footer__menu {/* grid area menu */ 
+    grid-area:menu;
+    
+}
+.footer__menu ul {
+    list-style: none;
+}
+.footer__menu ul li {
+    margin: 0 15px;
+    list-style: none;
+    color: #FF8CF0;
+}
+
+.footer__menu ul li a {
+    text-decoration: none;
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size:12px;
+}
+.footer__menu ul li a:hover {
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer__follow-us {/* grid area follow-us */ 
+    grid-area:follow-us;
+}
+.footer__follow-us ul {
+    list-style: none;
+}
+.footer__follow-us ul li {
+    margin: 0 15px;
+    list-style: none;
+    color: #FF8CF0;
+}
+
+.footer__follow-us ul li a {
+    text-decoration: none;
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size:12px;
+}
+.footer__follow-us ul li a:hover {
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.footer__location {/* grid area location */ 
+    grid-area:location;
+}
+.footer__location ul {
+    list-style: none;
+}
+.footer__location ul li {
+    margin: 0 15px;
+    list-style: none;
+    color: #FF8CF0;
+}
+
+.footer__location ul li a {
+    text-decoration: none;
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size:12px;
+}
+.footer__location ul li a:hover {
+    color: #009341;
+    font-family:'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+
+
+/* fotter ends */ 

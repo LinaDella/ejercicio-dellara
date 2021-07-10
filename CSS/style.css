@@ -1,0 +1,267 @@
+* { /* selector universal */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* TYPOGRAPHY: font-family: 'Montserrat', sans-serif; */
+/* LIGHT PINK: color: #FFE8FC */
+/* PINK: #FF8CF0 */
+/* GREEN: #009341 */
+/* GzEY: #555555 */
+/* WHITE: #ffffff */
+
+
+
+/* main starts */
+.estructura-home {
+   /*  padding: 10px;
+    background: aqua;*/
+    display: grid;
+    grid-template-areas:
+        "top"
+        "about-us-pic about-us-text"
+        "menu-text menu-pic"
+        "order-now"
+        "mood-at-home";
+    /* propiedades grid */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* top starts */
+.estructura-home__top {
+    grid-area: top;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-image: url(http://placekitten.com/1200/800);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10% 0 1%;
+}
+
+.top_button {
+    text-align: center;
+}
+.top_button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    background-color: #009341;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFE8FC;
+    padding: 15px 40px;
+    margin-top: 20%;
+    border-radius: 3px;
+    display: inline-block;
+}
+.top_button a:hover {
+    background-color: #FFE8FC;
+    color: #009341;
+}
+/* top ends */
+
+/* about-us starts */
+.estructura-home__about-us-pic {
+    grid-area: about-us-pic;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding: 10%;
+    background-color: #ffffff;
+    align-items: center;
+
+}
+.estructura-home__about-us-pic__img {
+    width: auto;
+    height: 100%;
+
+    
+}
+.estructura-home__about-us-text {
+    grid-area: about-us-text;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 10%;
+    background-color:  #ffffff;
+    align-items: flex-start;
+
+}
+
+.subtitulo-about-us {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: left;
+    color: #FF8CF0;
+    margin: none;
+}
+.text-about-us {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: left;
+    color: #555555;
+    padding: 25px 0; 
+}
+/* about-us ends */
+
+/* menu starts */
+
+
+.estructura-home__menu-text {
+    grid-area: menu-text;
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+    /* padding: 10%; */
+    background-color:  #FF8CF0;
+    align-items: flex-start;
+
+}
+
+.subtitulo-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: left;
+    color: #009341;
+    margin: none;
+}
+.text-menu {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 23px;
+    text-align: left;
+    color: #555555;
+    padding: 25px 0; 
+}
+
+.menu_button {
+    text-align: left;
+}
+.menu_button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    background-color: #009341;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFE8FC;
+    padding: 15px 40px;
+    margin-top: 20%;
+    border-radius: 3px;
+    display: inline-block;
+    
+}
+.menu_button a:hover {
+    background-color: #FFE8FC;
+    color: #009341;
+}
+.estructura-home__menu-pic {
+    grid-area: menu-pic;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+      /* padding: 10%; */
+    background-color: #FF8CF0;
+    align-items: center;
+}
+.estructura-home__menu__img {
+    width: auto;
+    height: 100%;
+}
+/* menu ends */
+
+/* order-now starts */
+.estructura-home__order-now {
+    grid-area: top;
+    grid-column: 1 / 3;
+    grid-row: 4 / 5;
+    background-image: url(http://placekitten.com/1200/800);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 40px 60px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 35px;
+    text-align: center;
+    color: #ffffff;
+    padding: 10% 0 1%;
+}
+
+.order-now_button {
+    text-align: center;
+}
+.order-now_button a {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    background-color: #009341;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #FFE8FC;
+    padding: 15px 40px;
+    margin-top: 20%;
+    border-radius: 3px;
+    display: inline-block;
+}
+.order-now_button a:hover {
+    background-color: #FFE8FC;
+    color: #009341;
+}
+
+/* order-now ends */
+
+
+/* mood-at-home starts */
+.estructura-home__mood-at-home {
+    grid-area: mood-at-home;
+    grid-column: 1 / 3;
+    grid-row: 5 / 6;
+    background-color: #ffffff;
+    background-position: center;
+    background-size: cover;
+    padding-top: 40px 60px;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subtitulo-mood-at-home {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    font-size: 35px;
+    text-align: center;
+    color: #FF8CF0;
+    margin: 10%;
+}
+
+.pics-mood-at-home {
+        display: flex;
+        align-items: center;
+        align-content: space-around;
+        justify-content: space-evenly;
+    }
+
+/* mood-at-home ends */
+
+/* main ends */
